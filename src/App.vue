@@ -1,0 +1,66 @@
+<template>
+  <div id="app">
+    
+    <audio id="audio" src ref="audio" ></audio>
+    <router-view/>
+  </div>
+</template>
+
+<style lang="less">
+  body{
+    height: 100%;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+p{
+  margin: 0;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clearfix::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.auto-img{
+  width: 100%;
+/* overflow: hidden; */
+  display: block;
+}
+
+.two-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.one-text1{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+</style>
